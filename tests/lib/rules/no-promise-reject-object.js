@@ -1,6 +1,6 @@
 /**
  * @fileoverview no-promise
- * @author zhuchuya
+ * @author zhichuya
  */
 'use strict';
 
