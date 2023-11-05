@@ -1,5 +1,5 @@
 {
-    "name": "eslint-plugin-zhichu",
+    "name": "@eslint-plugin-zhichu",
     "version": "0.0.0",
     "description": "Customize eslint rules",
     "keywords": [

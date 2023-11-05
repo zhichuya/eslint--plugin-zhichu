@@ -1,6 +1,6 @@
 # Avoid float number computing (`no-float-computation`)
 
-Please describe the origin of the rule here.
+In order to prevent the loss of precision caused by floating-point numbers, it is recommended to prohibit the use of floating-point numbers in development.
 
 ## Rule Details
 
@@ -11,6 +11,15 @@ Examples of **incorrect** code for this rule:
 ```js
 
 // fill me in
+1 + 1.1;
+1 - 1.1;
+1 * 1.1;
+1 / 1.1;
+
+const num1 = 1 + 1.1;
+const num2 = len + 1.1;
+
+let num3 = 10; num3 += 1.1
 
 ```
 
@@ -19,16 +28,24 @@ Examples of **correct** code for this rule:
 ```js
 
 // fill me in
+1 + 1;
+1 - 1;
+1 * 1;
+1 / 1;
 
+const num1 = 1 + 1;
+const num2 = len + 1;
+
+let num3 = 10; num3 += 1
 ```
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
+No options
 
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
+You can allow floating point numbers to be used for arithmetic, so you don't need to use this rule if you're not worried about losing precision.
 
 ## Further Reading
 
